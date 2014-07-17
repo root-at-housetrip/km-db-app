@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/HouseTrip/km-db.git
-  revision: a684542a3ae37925f307fb3e1fd9c65b185fd25b
+  revision: 642b9bd39aa12fc47c9d58eaa3cdf92fb4179bfe
   branch: parallel-resque
   specs:
     km-db (0.3.0)

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/HouseTrip/km-db.git
-  revision: 35e27ef956de0cd64285fecc603caedec49ab628
+  revision: a32d74c77eabe899dee002c84e4afb6808a3764c
   branch: parallel-resque
   specs:
     km-db (0.3.0)
@@ -8,6 +8,7 @@ GIT
       andand
       fog
       foreman
+      mysql2
       oj
       progressbar
       resque
@@ -72,6 +73,7 @@ GEM
     minitest (5.4.0)
     mono_logger (1.1.0)
     multi_json (1.10.1)
+    mysql2 (0.3.16)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)

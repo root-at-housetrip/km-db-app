@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'dogapi'
+require 'kmdb'
+require 'kmdb/models/event'
+
+KMDB.connect
+
+last_timestamp = KMDB::Event.order(:t).last.t.utc.to_i
+now = Time.now.utc.to_i
+
+staleness = now - last_timestamp
+
+puts "reporting staleness: #{staleness} seconds"
+
+env =     ENV.fetch('RACK_ENV')
+app =     ENV.fetch('APP_NAME')
+api_key = ENV.fetch('DATADOG_API_KEY')
+
+Dogapi::Client.new(api_key).emit_point('staleness', staleness, env:env, app:app)
+exit 0

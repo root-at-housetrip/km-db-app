@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/HouseTrip/km-db.git
-  revision: c590c416394ac44754938d7da88f16f22243158e
-  branch: parallel-resque
+  revision: 8eefb0c1e8edcebdf6fb36890c3e45d9dd7b5b58
   specs:
     km-db (0.3.0)
       activerecord (~> 4.1)

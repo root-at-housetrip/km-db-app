@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/HouseTrip/km-db.git
-  revision: 9555c879059c86dac2c2855c94050503b0fd9ce5
+  revision: 2cd007323e0e91f21b0e313793434597110f9348
   specs:
     km-db (0.3.0)
       activerecord (~> 4.1)
